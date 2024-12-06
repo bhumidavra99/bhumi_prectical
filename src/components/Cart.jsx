@@ -21,7 +21,7 @@ const Cart = () => {
         {cart.map((item) => (
           <div
             key={item.id}
-            className="flex items-center justify-between border p-4 rounded-md shadow"
+            className="flex flex-col md:flex-row items-center justify-between border p-4 rounded-md shadow"
           >
             <div className="flex items-center">
               <img
@@ -32,7 +32,6 @@ const Cart = () => {
               <div>
                 <h3 className="text-lg font-bold">{item.title}</h3>
                 <p className="text-gray-600">Price: ${item.price}</p>
-                <p className="text-gray-600">Quantity: {item.quantity}</p>
               </div>
             </div>
             <div className="flex items-center">
